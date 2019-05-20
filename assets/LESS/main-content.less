@@ -1,7 +1,11 @@
 .main-content {
+  padding-top: 2.5rem;
   position: relative;
   display: flex;
   justify-content: center;
+  @media @mobile{
+    .flex-direction(column);
+  }
   .top-content {
     .flex-direction(row);
     width: 90%;
@@ -9,10 +13,17 @@
     align-items: center;
     font-size: 1.6rem;
     line-height: 1.4;
+    @media @mobile{
+      .flex-direction(column);
+      width: 100%;
+    }
   }
   .super-ty {
     height: 40rem;
     z-index: 1;
+    @media @mobile{
+      height: 30rem;
+    }
   }
 
   .slogan {
@@ -21,7 +32,13 @@
       align-self: flex-start;
       margin-bottom: 4rem;
       font-size: 4.6rem;
-      @nav-heading : #FEF8F8;
+      color: @nav-heading;
+      @media @mobile{
+        align-self: center;
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        padding-top: 2.5rem;
+      }
     }
   }
   #quote {
@@ -37,6 +54,12 @@
     }
     em {
       font-weight: bold;
+    }
+    @media @mobile{
+      font-size: 1.8rem;
+      padding: 1rem;
+      margin: 0 2rem;
+      width: unset;
     }
   }
 }
