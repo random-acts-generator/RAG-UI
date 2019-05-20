@@ -8,6 +8,9 @@
     .flex-direction(row);
     justify-content: space-around;
     width: 75%;
+    @media @mobile{
+      flex-direction: column;
+    }
   }
   .link {
     background-color: @accent-color;
@@ -35,6 +38,11 @@
     margin: 1rem 0;
     height: 21rem;
     display: none;
+    @media @mobile{
+      width: 100%;
+      margin: 0;
+      height: unset;
+    }
     h3 {
       font-size: 3.6rem;
       line-height: 1.5;
