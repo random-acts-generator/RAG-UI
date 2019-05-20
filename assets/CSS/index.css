@@ -194,6 +194,84 @@ header button:hover {
     box-shadow: none;
   }
 }
+.main-content {
+  padding-top: 2.5rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .main-content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.main-content .top-content {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+@media (max-width: 500px) {
+  .main-content .top-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.main-content .super-ty {
+  height: 40rem;
+  z-index: 1;
+}
+@media (max-width: 500px) {
+  .main-content .super-ty {
+    height: 30rem;
+  }
+}
+.main-content .slogan {
+  display: flex;
+  flex-direction: column;
+}
+.main-content .slogan h2 {
+  align-self: flex-start;
+  margin-bottom: 4rem;
+  font-size: 4.6rem;
+  color: #FEF8F8;
+}
+@media (max-width: 500px) {
+  .main-content .slogan h2 {
+    align-self: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    padding-top: 2.5rem;
+  }
+}
+.main-content #quote {
+  width: 62rem;
+  margin-left: 4rem;
+  font-size: 2rem;
+  padding: 1.5rem;
+  background-color: #ece8e3;
+  color: #332A2E;
+  border-radius: 0.5rem;
+}
+.main-content #quote i {
+  font-style: italic;
+}
+.main-content #quote em {
+  font-weight: bold;
+}
+@media (max-width: 500px) {
+  .main-content #quote {
+    font-size: 1.8rem;
+    padding: 1rem;
+    margin: 0 2rem;
+    width: unset;
+  }
+}
 html,
 body {
   font-size: 62.5%;
