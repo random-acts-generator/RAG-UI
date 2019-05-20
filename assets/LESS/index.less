@@ -3,11 +3,33 @@
 @import "mixins.less";
 @import "header.less";
 @import "main-content.less";
+@import "top-content.less";
+@import "tabs.less";
 
-html, body{
-    font-size: 62.5%;
-    background-color: @bg-color;
-    font-family: @primaryFontFamily;
-    color: white;
+html,
+body {
+  font-size: 62.5%;
+  background-color: @bg-color;
+  font-family: @primaryFontFamily;
+  color: white;
 }
-
+p {
+  font-size: 1.6rem;
+}
+h2 {
+  font-size: 4.6rem;
+}
+.blue-seperator {
+  position: fixed;
+  background-color: #383841;
+  width: 200%;
+  height: 60rem;
+  top: 48%;
+  transform: rotate(-5deg);
+  z-index: 0;
+  box-shadow: 0px 0px 7px 1px rgba(39, 21, 29, 0.5);
+}
+#copyright{
+  font-size: 1.4rem;
+  padding: @small-top-padding;
+}
