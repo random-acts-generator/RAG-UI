@@ -131,48 +131,48 @@ html,
 body {
   box-sizing: border-box;
 }
-.container header {
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 3rem;
 }
 @media (max-width: 500px) {
-  .container header {
+  header {
     flex-direction: column;
     padding: 0;
   }
 }
-.container header section {
+header section {
   display: flex;
   align-items: center;
 }
 @media (max-width: 500px) {
-  .container header section {
+  header section {
     margin: 1rem 0;
   }
 }
-.container header section img {
+header section img {
   height: 7.5rem;
 }
-.container header section h1 {
+header section h1 {
   margin-left: 1.5rem;
   font-size: 3.6rem;
   color: #FEF8F8;
 }
-.container header nav a {
+header nav a {
   margin: 0 2rem;
   font-size: 2.4rem;
   color: #EEEEEE;
   text-decoration: none;
 }
 @media (max-width: 500px) {
-  .container header nav a {
+  header nav a {
     margin: 0 0.5rem;
     font-size: 2rem;
   }
 }
-.container header nav button {
+header button {
   background-color: #1762a7;
   box-shadow: 0rem 0rem 1.3rem 0.1rem rgba(0, 0, 0, 0.3);
   color: #EEEEEE;
@@ -183,12 +183,12 @@ body {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-.container header nav button:hover {
+header button:hover {
   background-color: #0b4072;
   transition: background-color 0.3s;
 }
 @media (max-width: 500px) {
-  .container header nav button {
+  header button {
     padding: 0.5rem 1.5rem;
     font-size: 2rem;
     box-shadow: none;
