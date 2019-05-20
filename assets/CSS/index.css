@@ -127,6 +127,7 @@ table {
   border-spacing: 0;
 }
 /*  default box-sizing*/
+*,
 html,
 body {
   box-sizing: border-box;
@@ -288,6 +289,11 @@ header button:hover {
   justify-content: space-around;
   width: 75%;
 }
+@media (max-width: 500px) {
+  .middle-content .mission {
+    flex-direction: column;
+  }
+}
 .middle-content .link {
   background-color: #27151d;
   border-radius: 0.5rem;
@@ -316,6 +322,13 @@ header button:hover {
   height: 21rem;
   display: none;
 }
+@media (max-width: 500px) {
+  .middle-content .item {
+    width: 100%;
+    margin: 0;
+    height: unset;
+  }
+}
 .middle-content .item h3 {
   font-size: 3.6rem;
   line-height: 1.5;
@@ -343,10 +356,14 @@ h2 {
 .blue-seperator {
   position: fixed;
   background-color: #383841;
-  width: 120%;
+  width: 200%;
   height: 60rem;
-  top: 50%;
+  top: 48%;
   transform: rotate(-5deg);
   z-index: 0;
   box-shadow: 0px 0px 7px 1px rgba(39, 21, 29, 0.5);
+}
+#copyright {
+  font-size: 1.4rem;
+  padding: 2.5rem;
 }
