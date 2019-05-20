@@ -194,8 +194,47 @@ header button:hover {
     box-shadow: none;
   }
 }
+.main-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.main-content .top-content {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
 .main-content .super-ty {
   height: 40rem;
+  z-index: 1;
+}
+.main-content .slogan {
+  display: flex;
+  flex-direction: column;
+}
+.main-content .slogan h2 {
+  align-self: flex-start;
+  margin-bottom: 4rem;
+  font-size: 4.6rem;
+}
+.main-content #quote {
+  width: 62rem;
+  margin-left: 4rem;
+  font-size: 2rem;
+  padding: 1.5rem;
+  background-color: #ece8e3;
+  color: #332A2E;
+  border-radius: 0.5rem;
+}
+.main-content #quote i {
+  font-style: italic;
+}
+.main-content #quote em {
+  font-weight: bold;
 }
 html,
 body {

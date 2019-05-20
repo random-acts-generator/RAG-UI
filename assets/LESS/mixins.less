@@ -3,7 +3,7 @@
     box-shadow: 0rem 0rem 1.3rem 0.1rem rgba(0, 0, 0, 0.3);
     color: @nav-anchors;
     font-size: 2rem;
-    border-radius: 0.5rem;
+    border-radius: @small-border-radius;
     border: none;
     padding: 1.2rem 2.5rem;
     cursor: pointer;
@@ -17,4 +17,8 @@
       font-size: @nav-font-size-Mobile;
       box-shadow: none;
     }
+}
+.flex-direction(@direction){
+    display: flex;
+    flex-direction: @direction;
 }
