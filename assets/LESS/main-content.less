@@ -1,66 +1,11 @@
 .main-content {
-  padding-top: 2.5rem;
+  padding-top: @small-top-padding;
   position: relative;
   .flex-direction(column);
   justify-content: center;
+  align-items: center;
   z-index: 1;
   @media @mobile{
     .flex-direction(column);
-  }
-  .top-content {
-    .flex-direction(row);
-    width: 90%;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 1.6rem;
-    line-height: 1.4;
-    @media @mobile{
-      .flex-direction(column);
-      width: 100%;
-    }
-  }
-  .super-ty {
-    height: 40rem;
-    z-index: 1;
-    @media @mobile{
-      height: 30rem;
-    }
-  }
-
-  .slogan {
-    .flex-direction(column);
-    h2 {
-      align-self: flex-start;
-      margin-bottom: 4rem;
-      font-size: 4.6rem;
-      color: @nav-heading;
-      @media @mobile{
-        align-self: center;
-        font-size: 3rem;
-        margin-bottom: 2rem;
-        padding-top: 2.5rem;
-      }
-    }
-  }
-  #quote {
-    width: 62rem;
-    margin-left: 4rem;
-    font-size: 2rem;
-    padding: 1.5rem;
-    background-color: @cozywhite;
-    color: @bg-color;
-    border-radius: @small-border-radius;
-    i {
-      font-style: italic;
-    }
-    em {
-      font-weight: bold;
-    }
-    @media @mobile{
-      font-size: 1.8rem;
-      padding: 1rem;
-      margin: 0 2rem;
-      width: unset;
-    }
   }
 }
