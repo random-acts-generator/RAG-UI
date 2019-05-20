@@ -194,6 +194,9 @@ header button:hover {
     box-shadow: none;
   }
 }
+.main-content .super-ty {
+  height: 40rem;
+}
 html,
 body {
   font-size: 62.5%;
