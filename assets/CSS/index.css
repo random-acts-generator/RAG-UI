@@ -146,7 +146,7 @@ p {
 h1 {
   font-size: 4.6rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 630px) {
   h1 {
     font-size: 3rem;
   }
@@ -195,7 +195,15 @@ header {
   align-items: center;
   padding: 3rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 1124px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+@media (max-width: 630px) {
   header {
     display: flex;
     flex-direction: column;
@@ -207,7 +215,16 @@ header section {
   justify-content: flex-start;
   align-items: center;
 }
-@media (max-width: 500px) {
+@media (max-width: 1124px) {
+  header section {
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 0;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+@media (max-width: 630px) {
   header section {
     margin: 1rem 0;
   }
@@ -218,13 +235,28 @@ header section img {
 header section h2 {
   margin-left: 1.5rem;
 }
+@media (max-width: 1124px) {
+  header section h2 {
+    margin: 1rem 0;
+  }
+}
+@media (max-width: 1124px) {
+  header nav {
+    margin: 1rem 0;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+}
 header nav a {
   margin: 0 2rem;
   font-size: 2.4rem;
   color: #EEEEEE;
   text-decoration: none;
 }
-@media (max-width: 500px) {
+@media (max-width: 630px) {
   header nav a {
     margin: 0 0.5rem;
     font-size: 2rem;
@@ -245,7 +277,7 @@ header button:hover {
   background-color: #0b4072;
   transition: background-color 0.3s;
 }
-@media (max-width: 500px) {
+@media (max-width: 630px) {
   header button {
     padding: 0.5rem 1.5rem;
     box-shadow: none;
@@ -260,7 +292,7 @@ header button:hover {
   align-items: center;
   z-index: 1;
 }
-@media (max-width: 500px) {
+@media (max-width: 630px) {
   .main-content {
     display: flex;
     flex-direction: column;
@@ -273,7 +305,14 @@ header button:hover {
   justify-content: space-around;
   align-items: center;
 }
-@media (max-width: 500px) {
+@media (max-width: 1124px) {
+  .top-content {
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+  }
+}
+@media (max-width: 630px) {
   .top-content {
     display: flex;
     flex-direction: column;
@@ -283,7 +322,12 @@ header button:hover {
 .super-ty {
   height: 40rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 630px) {
+  .super-ty {
+    height: 30rem;
+  }
+}
+@media (max-width: 1124px) {
   .super-ty {
     height: 30rem;
   }
@@ -292,12 +336,24 @@ header button:hover {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 1124px) {
+  .slogan {
+    width: 100%;
+    margin-left: 1.5rem;
+    text-align: center;
+  }
+}
 .slogan h1 {
   align-self: flex-start;
   margin-bottom: 4rem;
   color: #FEF8F8;
 }
-@media (max-width: 500px) {
+@media (max-width: 1124px) {
+  .slogan h1 {
+    align-self: center;
+  }
+}
+@media (max-width: 630px) {
   .slogan h1 {
     align-self: center;
     margin-bottom: 2rem;
@@ -313,7 +369,13 @@ header button:hover {
   color: #332A2E;
   border-radius: 0.5rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 1124px) {
+  .quote {
+    margin: 0;
+    width: 100%;
+  }
+}
+@media (max-width: 630px) {
   .quote {
     font-size: 1.8rem;
     margin: 0 2rem;
@@ -334,17 +396,39 @@ header button:hover {
   justify-content: space-around;
   width: 75%;
 }
-@media (max-width: 500px) {
+@media (max-width: 1124px) {
+  .middle-content .mission {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+  }
+}
+@media (max-width: 630px) {
   .middle-content .mission {
     flex-direction: column;
     width: 90%;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 1124px) {
+  .middle-content .tab-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 630px) {
   .middle-content .tab-links {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+}
+.middle-content .tab-items {
+  margin: 0 2rem;
+}
+@media (max-width: 1124px) {
+  .middle-content .tab-items {
+    margin: 0;
   }
 }
 .middle-content .link {
@@ -359,7 +443,12 @@ header button:hover {
   transition: background-color 0.3s;
   cursor: pointer;
 }
-@media (max-width: 500px) {
+@media (max-width: 1124px) {
+  .middle-content .link {
+    width: 33%;
+  }
+}
+@media (max-width: 630px) {
   .middle-content .link {
     padding: 3rem 0;
     width: 30%;
@@ -381,9 +470,14 @@ header button:hover {
   height: 21rem;
   display: none;
 }
-@media (max-width: 500px) {
+@media (max-width: 1124px) {
   .middle-content .item {
     width: 100%;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 630px) {
+  .middle-content .item {
     margin: 0;
     height: unset;
   }
