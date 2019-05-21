@@ -155,6 +155,11 @@ h2 {
   font-size: 3.6rem;
   color: #FEF8F8;
 }
+h3 {
+  font-size: 2.8rem;
+  text-align: center;
+  line-height: 1.8;
+}
 i {
   font-style: italic;
 }
@@ -541,4 +546,65 @@ button:hover {
 }
 .middle-content .selected {
   display: flex;
+}
+.main-content.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.main-content.about h1 {
+  margin: 2rem 0;
+}
+.main-content.about .team {
+  position: relative;
+  width: 62%;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: space-around;
+}
+.main-content.about .team-member {
+  position: relative;
+  margin: 1rem 0;
+}
+.main-content.about .info {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 30rem;
+  width: 30rem;
+  padding: 1rem;
+  display: none;
+}
+.main-content.about .info p {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+.main-content.about .info a div {
+  width: 100%;
+  position: absolute;
+}
+.main-content.about .info .github {
+  background-image: url("../../assets/IMAGES/Team/gh-img.png");
+  height: 3.2rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.main-content.about .hover {
+  display: unset;
+}
+.main-content.about ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: space-around;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+.main-content.about img {
+  height: 30rem;
+  box-shadow: 0rem 0rem 1.3rem 0.1rem rgba(0, 0, 0, 0.5);
+  border-radius: 0.3rem;
 }
