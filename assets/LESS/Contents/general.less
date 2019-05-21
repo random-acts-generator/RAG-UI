@@ -41,3 +41,21 @@ em {
   font-size: @small-paragraph-font-size;
   padding: @small-top-padding;
 }
+
+//custom scrollbar
+
+::-webkit-scrollbar {
+  width: 1.4rem;
+}
+
+::-webkit-scrollbar-track {
+  background: darken(@accent-color, 10);
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: @accent-color;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: lighten(@accent-color, 10);
+}
