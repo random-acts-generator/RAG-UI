@@ -557,6 +557,19 @@ button:hover {
 .main-content.about h1 {
   margin: 2rem 0;
 }
+.main-content.about .about-text {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  border-bottom: 0.4rem solid #27151d;
+  text-align: justify;
+}
+.main-content.about .about-text p {
+  line-height: 1.8;
+}
 .main-content.about .team {
   position: relative;
   width: 62%;
