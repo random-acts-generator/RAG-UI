@@ -34,8 +34,12 @@ header {
     }
   }
   nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     @media @tablet {
       .vertical-margins(1rem);
+      flex-direction: column;
       font-size: @nav-font-size-Mobile;
       display: flex;
       justify-content: space-around;
@@ -51,6 +55,19 @@ header {
         .horizontal-margins(0.5rem);
         font-size: @nav-font-size-Mobile;
       }
+    }
+    .nav-links{
+     .flex-direction(row);
+     .justify-align(space-around, center);
+      padding: 0 2rem;
+      .vertical-margins(2rem);
+      .tablet-expand();
+    }
+    .nav-buttons{
+     .flex-direction(row);
+     .justify-align(center, center);
+     .tablet-expand();
+    }
     }
   }
   button {
@@ -79,5 +96,4 @@ header {
     100%{
       transform: scale(1);
   }
-}
 }

@@ -155,6 +155,11 @@ h2 {
   font-size: 3.6rem;
   color: #FEF8F8;
 }
+h3 {
+  font-size: 2.8rem;
+  text-align: center;
+  line-height: 1.8;
+}
 i {
   font-style: italic;
 }
@@ -242,9 +247,15 @@ header section h2 {
     margin: 1rem 0;
   }
 }
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @media (max-width: 1124px) {
   header nav {
     margin: 1rem 0;
+    flex-direction: column;
     font-size: 2rem;
     display: flex;
     justify-content: space-around;
@@ -264,7 +275,31 @@ header nav a {
     font-size: 2rem;
   }
 }
-header button {
+header nav .nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 2rem;
+  margin: 2rem 0;
+}
+@media (max-width: 1124px) {
+  header nav .nav-links {
+    width: 100%;
+  }
+}
+header nav .nav-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1124px) {
+  header nav .nav-buttons {
+    width: 100%;
+  }
+}
+button {
   background-color: #1762a7;
   box-shadow: 0rem 0rem 1.3rem 0.1rem rgba(0, 0, 0, 0.3);
   color: #EEEEEE;
@@ -275,15 +310,9 @@ header button {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-header button:hover {
+button:hover {
   background-color: #0b4072;
   transition: background-color 0.3s;
-}
-@media (max-width: 630px) {
-  header button {
-    padding: 0.5rem 1.5rem;
-    box-shadow: none;
-  }
 }
 @keyframes beat {
   0% {
@@ -517,4 +546,99 @@ header button:hover {
 }
 .middle-content .selected {
   display: flex;
+}
+.main-content.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.main-content.about h1 {
+  margin: 2rem 0;
+}
+.main-content.about .about-text {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  border-bottom: 0.4rem solid #27151d;
+  text-align: justify;
+}
+.main-content.about .about-text p {
+  line-height: 1.8;
+}
+@media (max-width: 1124px) {
+  .main-content.about .about-text {
+    width: 90%;
+  }
+}
+@media (max-width: 630px) {
+  .main-content.about .about-text {
+    width: 95%;
+    line-heigt: 1.4;
+  }
+}
+.main-content.about .team {
+  position: relative;
+  width: 62%;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: space-around;
+}
+@media (max-width: 1124px) {
+  .main-content.about .team {
+    width: 90%;
+  }
+}
+.main-content.about .team-member {
+  position: relative;
+  margin: 1rem 0;
+}
+.main-content.about .info {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 30rem;
+  width: 30rem;
+  padding: 1rem;
+  display: none;
+}
+.main-content.about .info p {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+.main-content.about .info a div {
+  width: 3.2rem;
+  position: absolute;
+}
+.main-content.about .info .github {
+  background-image: url("../../assets/IMAGES/Team/gh-img.png");
+  height: 3.2rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.main-content.about .hover {
+  display: unset;
+}
+.main-content.about ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: space-around;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+.main-content.about img {
+  height: 30rem;
+  box-shadow: 0rem 0rem 1.3rem 0.1rem rgba(0, 0, 0, 0.5);
+  border-radius: 0.3rem;
+}
+@media (max-width: 630px) {
+  .main-content.about img {
+    height: 20rem;
+  }
 }

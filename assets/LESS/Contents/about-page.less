@@ -1,0 +1,81 @@
+.main-content.about{
+    .flex-direction(column);
+    .justify-align(center, center);
+    padding: 0;
+    h1{
+        .vertical-margins(2rem);
+    }
+    .about-text{
+        width: 60%;
+    .flex-direction(column);
+    .justify-align(center, center);
+    padding: 2rem;
+    border-bottom: 0.4rem solid @accent-color;
+    text-align: justify;
+    p{
+        line-height: 1.8;
+    }
+    @media @tablet{
+        width: 90%;
+    }
+    @media @mobile{
+        width: 95%;
+        line-heigt: 1.4;
+    }
+    }
+    .team{
+        position: relative;
+        width: 62%;
+        flex-wrap: wrap;
+        .flex-direction(row);
+        .justify-align(center, space-around);
+        @media @tablet{
+            width: 90%;
+        }
+    }
+    .team-member{
+        position: relative;
+        .vertical-margins(1rem);
+    }
+    .info{
+        position: absolute;
+        background-color: rgba(0,0,0,0.5);
+        height: 30rem;
+        width: 30rem;
+        padding: 1rem;
+        display: none;
+        p{
+            font-size: 2.4rem;
+            margin-bottom: 2rem;
+        }
+        a{
+            div{
+                width: 3.2rem;
+                position: absolute;
+            }
+        }
+        .github{
+            background-image: url("../../assets/IMAGES/Team/gh-img.png");
+            height: 3.2rem;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+    .hover{
+        display: unset;
+    }
+    ul{
+        .flex-direction(row);
+        .justify-align(space-around, space-around);
+        flex-wrap: wrap;
+        align-content: space-around;
+    }
+    img{
+        height: 30rem;
+        box-shadow: @normal-shadow;
+        border-radius: 0.3rem;
+        @media @mobile{
+            height: 20rem;
+        }
+    }
+}

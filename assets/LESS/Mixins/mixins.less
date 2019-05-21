@@ -12,22 +12,33 @@
       background-color: @nav-button-hover;
       transition: @fast-transition;
     }
-    @media @mobile {
-      padding: 0.5rem 1.5rem;
-      box-shadow: none;
-    }
-}
+  }
+
 .flex-direction(@direction){
     display: flex;
     flex-direction: @direction;
 }
+
 .justify-align(@justify, @align){
   justify-content: @justify;
   align-items: @align
 }
+
 .horizontal-margins(@side){
   margin: 0 @side;
 }
+
 .vertical-margins(@vertical){
   margin: @vertical 0;
+}
+
+.mobile-expand(){
+  @media @mobile{
+    width: 100%;
+  }
+}
+.tablet-expand(){
+  @media @tablet{
+    width: 100%;
+  }
 }
