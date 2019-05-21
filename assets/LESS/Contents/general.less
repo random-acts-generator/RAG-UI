@@ -1,0 +1,42 @@
+
+html,
+body {
+  font-size: 62.5%;
+  background-color: @bg-color;
+  font-family: @primaryFontFamily;
+  color: white;
+}
+p {
+  font-size: @paragraph-font-size;
+  line-height: @lineHeight-paragraph;
+}
+h1 {
+  font-size: @headline-font-size;
+  @media @mobile{
+    font-size: @mobile-headline-font-size;
+  }
+}
+h2{
+  font-size: @heading2-font-size;
+  color: @nav-heading;
+}
+i {
+  font-style: italic;
+}
+em {
+  font-weight: bold;
+}
+.blue-seperator {
+  position: fixed;
+  background-color: #383841;
+  width: 200%;
+  height: 60rem;
+  top: 48%;
+  transform: rotate(-5deg);
+  z-index: 0;
+  box-shadow: @subtle-shadow-up;
+}
+#copyright{
+  font-size: @small-paragraph-font-size;
+  padding: @small-top-padding;
+}
