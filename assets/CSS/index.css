@@ -578,7 +578,7 @@ button:hover {
 @media (max-width: 630px) {
   .main-content.about .about-text {
     width: 95%;
-    line-heigt: 1.4;
+    line-height: 1.4;
   }
 }
 .main-content.about .team {
