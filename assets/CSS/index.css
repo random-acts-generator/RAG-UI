@@ -521,7 +521,6 @@ button:hover {
   padding: 2rem;
   width: 80rem;
   margin: 1rem 0;
-  height: 21rem;
   display: none;
 }
 @media (max-width: 1124px) {
@@ -543,6 +542,7 @@ button:hover {
 .middle-content .item p {
   font-size: 2rem;
   line-height: 1.25;
+  text-align: justify;
 }
 .middle-content .selected {
   display: flex;
@@ -578,7 +578,7 @@ button:hover {
 @media (max-width: 630px) {
   .main-content.about .about-text {
     width: 95%;
-    line-heigt: 1.4;
+    line-height: 1.4;
   }
 }
 .main-content.about .team {
