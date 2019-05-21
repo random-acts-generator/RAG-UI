@@ -570,6 +570,17 @@ button:hover {
 .main-content.about .about-text p {
   line-height: 1.8;
 }
+@media (max-width: 1124px) {
+  .main-content.about .about-text {
+    width: 90%;
+  }
+}
+@media (max-width: 630px) {
+  .main-content.about .about-text {
+    width: 95%;
+    line-heigt: 1.4;
+  }
+}
 .main-content.about .team {
   position: relative;
   width: 62%;
