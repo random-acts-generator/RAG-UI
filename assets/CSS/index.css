@@ -231,6 +231,8 @@ header section {
 }
 header section img {
   height: 7.5rem;
+  animation: beat 1.2s linear infinite;
+  transform-origin: center;
 }
 header section h2 {
   margin-left: 1.5rem;
@@ -281,6 +283,29 @@ header button:hover {
   header button {
     padding: 0.5rem 1.5rem;
     box-shadow: none;
+  }
+}
+@keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  70% {
+    transform: scale(1.2);
+  }
+  90% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 .main-content {
