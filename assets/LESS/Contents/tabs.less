@@ -10,6 +10,13 @@
     width: 75%;
     @media @mobile{
       flex-direction: column;
+      width: 90%;
+    }
+  }
+  .tab-links{
+    @media @mobile{
+      .flex-direction(row);
+      justify-content: space-between;
     }
   }
   .link {
@@ -23,6 +30,10 @@
     margin: 1rem 0;
     transition: @fast-transition;
     cursor: pointer;
+    @media @mobile{
+      padding: 3rem 0;
+      width: 30%;
+    }
     &:hover {
       background-color: @nav-button;
       transition: @fast-transition;
