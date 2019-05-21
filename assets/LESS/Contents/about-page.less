@@ -11,6 +11,9 @@
         flex-wrap: wrap;
         .flex-direction(row);
         .justify-align(center, space-around);
+        @media @tablet{
+            width: 90%;
+        }
     }
     .team-member{
         position: relative;
@@ -29,7 +32,7 @@
         }
         a{
             div{
-                width: 100%;
+                width: 3.2rem;
                 position: absolute;
             }
         }
@@ -53,5 +56,8 @@
         height: 30rem;
         box-shadow: @normal-shadow;
         border-radius: 0.3rem;
+        @media @mobile{
+            height: 20rem;
+        }
     }
 }
