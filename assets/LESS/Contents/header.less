@@ -23,6 +23,8 @@ header {
     }
     img {
       height: 7.5rem;
+      animation: beat 1.2s linear infinite;
+      transform-origin: center;
     }
     h2 {
       margin-left: 1.5rem;
@@ -54,4 +56,28 @@ header {
   button {
     .btn-mixin();
   }
+
+  @keyframes beat{
+    0%{
+      transform: scale(1);
+    }
+    25%{
+      transform: scale(1);
+    }
+    30%{
+      transform: scale(1.2);
+    }
+    50%{
+      transform: scale(1.1);
+    }
+    70%{
+      transform: scale(1.2);
+    }
+    90%{
+      transform: scale(1);
+    }
+    100%{
+      transform: scale(1);
+  }
+}
 }
