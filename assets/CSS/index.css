@@ -325,6 +325,14 @@ header button:hover {
 @media (max-width: 500px) {
   .middle-content .mission {
     flex-direction: column;
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .middle-content .tab-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 .middle-content .link {
@@ -338,6 +346,12 @@ header button:hover {
   margin: 1rem 0;
   transition: background-color 0.3s;
   cursor: pointer;
+}
+@media (max-width: 500px) {
+  .middle-content .link {
+    padding: 3rem 0;
+    width: 30%;
+  }
 }
 .middle-content .link:hover {
   background-color: #1762a7;
