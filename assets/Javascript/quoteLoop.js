@@ -61,15 +61,16 @@ const author = document.querySelector(".author");
 const quoteWrap = document.querySelector(".quote");
 let index = 0;
 
-updateQuote();
 
-function updateQuote() {
-    setInterval(() => {
-        if (index === quotesArray.length - 1) {
-            index = 0;
-        }
-        ++index;
-        quote.textContent = `"${quotesArray[index].text}"`;
-        author.textContent = quotesArray[index].author;
-    }, 9000)
+function updateQuote(array) {
+  setInterval(() => {
+    if (index === array.length - 1) {
+      index = 0;
+    }
+    ++index;
+    quote.textContent = `"${array[index].text}"`;
+    author.textContent = array[index].author;
+  }, 9000)
 }
+
+updateQuote(quotesArray);
