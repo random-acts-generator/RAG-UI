@@ -8,15 +8,29 @@
     .flex-direction(row);
     justify-content: space-around;
     width: 75%;
+    @media @tablet{
+      .flex-direction(column);
+      width: 85%;
+    }
     @media @mobile{
       flex-direction: column;
       width: 90%;
     }
   }
   .tab-links{
+    @media @tablet{
+      .flex-direction(row);
+      justify-content: space-around;
+    }
     @media @mobile{
       .flex-direction(row);
       justify-content: space-between;
+    }
+  }
+  .tab-items{
+    margin: 0 2rem;
+    @media @tablet{
+      margin: 0;
     }
   }
   .link {
@@ -30,6 +44,9 @@
     margin: 1rem 0;
     transition: @fast-transition;
     cursor: pointer;
+    @media @tablet{
+      width: 33%;
+    }
     @media @mobile{
       padding: 3rem 0;
       width: 30%;
@@ -49,8 +66,11 @@
     margin: 1rem 0;
     height: 21rem;
     display: none;
-    @media @mobile{
+    @media @tablet{
       width: 100%;
+      justify-content: space-around;
+    }
+    @media @mobile{
       margin: 0;
       height: unset;
     }

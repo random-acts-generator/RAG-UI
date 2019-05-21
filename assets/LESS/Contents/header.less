@@ -2,13 +2,22 @@ header {
   .flex-direction(row);
   .justify-align(space-between, center);
   padding: 3rem;
+  @media @tablet {
+    .flex-direction(column);
+    .justify-align(space-around, center);
+  }
   @media @mobile {
-  .flex-direction(column);
+    .flex-direction(column);
     padding: 0;
   }
   section {
     display: flex;
-  .justify-align(flex-start, center);
+    .justify-align(flex-start, center);
+    @media @tablet {
+      .flex-direction(column);
+      .vertical-margins(0rem);
+      .justify-align(space-around, center);
+    }
     @media @mobile {
       .vertical-margins(1rem);
     }
@@ -17,16 +26,27 @@ header {
     }
     h2 {
       margin-left: 1.5rem;
+      @media @tablet{
+        .vertical-margins(1rem);
+      }
     }
   }
   nav {
+    @media @tablet {
+      .vertical-margins(1rem);
+      font-size: @nav-font-size-Mobile;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+    }
     a {
       .horizontal-margins(2rem);
       font-size: @nav-font-size;
       color: @nav-anchors;
       text-decoration: none;
       @media @mobile {
-      .horizontal-margins(0.5rem);
+        .horizontal-margins(0.5rem);
         font-size: @nav-font-size-Mobile;
       }
     }
