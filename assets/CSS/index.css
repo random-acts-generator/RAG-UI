@@ -276,12 +276,17 @@ header nav {
 @media (max-width: 1124px) {
   header nav {
     margin: 1rem 0;
-    flex-direction: column;
+    flex-direction: row;
     font-size: 2rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
+  }
+}
+@media (max-width: 630px) {
+  header nav {
+    flex-direction: column;
   }
 }
 header nav a {
@@ -290,6 +295,8 @@ header nav a {
   color: #EEEEEE;
   text-decoration: none;
   transition: color 0.3s ease-in-out;
+  word-break: keep-all;
+  white-space: nowrap;
 }
 @media (max-width: 630px) {
   header nav a {
@@ -609,6 +616,7 @@ button:hover {
 }
 .main-content.about .about-text p {
   line-height: 1.8;
+  word-break: break-word;
 }
 @media (max-width: 1124px) {
   .main-content.about .about-text {
