@@ -13,3 +13,12 @@ class LinkSelector {
 }
 const links = document.querySelectorAll(".link");
 links.forEach(button => new LinkSelector(button));
+
+// Changes the content if it's on mobile view
+let content = window.matchMedia("(max-width: 485px)")
+const lastLink = document.querySelector('.link[data-id="3"] h3')
+window.addEventListener("resize", () => {
+  content.matches === true 
+    ? lastLink.textContent = "Kind-ness" 
+    : lastLink.textContent = "Kindness"
+  })

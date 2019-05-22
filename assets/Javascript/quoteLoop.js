@@ -71,6 +71,7 @@ function updateQuote(array) {
     quote.textContent = `"${array[index].text}"`;
     author.textContent = array[index].author;
   }, 9000)
+  
 }
 
 updateQuote(quotesArray);

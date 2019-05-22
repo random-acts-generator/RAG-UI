@@ -44,6 +44,10 @@
         width: 30rem;
         padding: 1rem;
         display: none;
+        @media @mobile{
+            height:20rem;
+            width: 20rem;
+        }
         p{
             font-size: 2.4rem;
             margin-bottom: 2rem;
@@ -63,6 +67,7 @@
     }
     .hover{
         display: unset;
+        transition: 2s;
     }
     ul{
         .flex-direction(row);

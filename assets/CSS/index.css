@@ -142,6 +142,7 @@ body {
 p {
   font-size: 1.6rem;
   line-height: 1.4;
+  word-break: break-all;
 }
 h1 {
   font-size: 4.6rem;
@@ -422,6 +423,7 @@ button:hover {
   background-color: #f3e8db;
   color: #332A2E;
   border-radius: 0.5rem;
+  word-break: keep-all;
 }
 @media (max-width: 1124px) {
   .quote {
@@ -486,6 +488,10 @@ button:hover {
   }
 }
 .middle-content .link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   background-color: #27151d;
   border-radius: 0.5rem;
   color: #f3e8db;
@@ -494,6 +500,7 @@ button:hover {
   padding: 3rem;
   font-size: 1.6rem;
   margin: 1rem 0;
+  word-wrap: break-word;
   transition: background-color 0.3s;
   cursor: pointer;
 }
@@ -607,6 +614,12 @@ button:hover {
   padding: 1rem;
   display: none;
 }
+@media (max-width: 630px) {
+  .main-content.about .info {
+    height: 20rem;
+    width: 20rem;
+  }
+}
 .main-content.about .info p {
   font-size: 2.4rem;
   margin-bottom: 2rem;
@@ -623,6 +636,7 @@ button:hover {
 }
 .main-content.about .hover {
   display: unset;
+  transition: 2s;
 }
 .main-content.about ul {
   display: flex;
