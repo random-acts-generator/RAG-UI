@@ -11,7 +11,7 @@ We're talking about upgrade!
 
 ## My role in the project:
 
-My contribution in this project was to build a modern looking marketing/landing page with the goal of captivating the user into register and using the app.
+My contribution in this project was to build a modern looking marketing/landing page with the goal of captivating the user into register and using the app and an about page.
 
 ### What did I do to achieve it?
 
