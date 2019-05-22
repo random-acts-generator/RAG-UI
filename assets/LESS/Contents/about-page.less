@@ -10,10 +10,11 @@
     .flex-direction(column);
     .justify-align(center, center);
     padding: 2rem;
-    border-bottom: 0.4rem solid @accent-color;
+    border-bottom: 0.4rem solid @nav-anchors;
     text-align: justify;
     p {
       line-height: 1.8;
+      word-break: break-word;
     }
     @media @tablet {
       width: 90%;
@@ -43,8 +44,8 @@
     height: 30rem;
     width: 30rem;
     padding: 1rem;
-    visibility: hidden;
-    opacity: 0;
+    opacity: 0.6;
+    border-radius: 0.3rem;
     transition: @hover-ease-io;
     @media @mobile {
       height: 20rem;
@@ -54,7 +55,7 @@
       font-size: 2.4rem;
       margin-bottom: 2rem;
       word-break: normal;
-      color: @lightskyblue;
+      color: @babyblue;
     }
     a {
       div {
@@ -73,7 +74,6 @@
     }
   }
   .hover {
-    visibility: unset;
     opacity: 1;
     transition: @hover-ease-io;
   }

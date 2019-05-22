@@ -33,13 +33,13 @@ em {
 }
 .blue-seperator {
   position: fixed;
-  background-color: #383841;
+  background-color: #a14156;
   width: 200%;
   height: 60rem;
   top: 48%;
   transform: rotate(-5deg);
   margin-left: -37.5%;
-  z-index: 0;
+  z-index: 1;
   box-shadow: @subtle-shadow-up;
 }
 #copyright {
@@ -47,8 +47,30 @@ em {
   padding: @small-top-padding;
 }
 
-//custom scrollbar
+.ellipse{
+  position: fixed;
+  width: 250px;
+  height: 250px;
+  left: 1650px;
+  top: -50px;
+  background-color: rgba(99, 176, 247, 0.1);
+  border-radius: 50%;
+  z-index: 0;
+}
+.ellipse-2{
+  position: fixed;
+  width: 367px;
+  height: 360px;
+  left: -128px;
+  top: 400px;
+  background-color:  rgba(243, 28, 132, 0.1);
+  border-radius: 50%;
+  z-index: 0;
+}
 
+
+
+//custom scrollbar
 ::-webkit-scrollbar {
   width: 1.4rem;
 }

@@ -1,4 +1,5 @@
 header {
+  .vertical-margins(1rem);
   .flex-direction(row);
   .justify-align(space-between, center);
   padding: 3rem;
@@ -10,26 +11,26 @@ header {
     .flex-direction(column);
     padding: 0;
   }
-  section {
-    display: flex;
-    .justify-align(flex-start, center);
-    @media @tablet {
-      .flex-direction(column);
-      .vertical-margins(0rem);
-      .justify-align(space-around, center);
-    }
-    @media @mobile {
-      .vertical-margins(1rem);
-    }
-    img {
-      height: 7.5rem;
-      animation: beat 1.2s linear infinite;
-      transform-origin: center;
-    }
-    h2 {
-      margin-left: 1.5rem;
+  a{
+    text-decoration: none;
+    section {
+      display: flex;
+      .justify-align(flex-start, center);
       @media @tablet {
-        .vertical-margins(1rem);
+        .flex-direction(column);
+        .vertical-margins(0rem);
+        .justify-align(space-around, center);
+      }
+      img {
+        height: 7.5rem;
+        animation: beat 1.2s linear infinite;
+        transform-origin: center;
+      }
+      h2 {
+        margin-left: 1.5rem;
+        @media @tablet {
+          .vertical-margins(0.5rem);
+        }
       }
     }
   }
@@ -37,14 +38,18 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
     @media @tablet {
       .vertical-margins(1rem);
-      flex-direction: column;
+      flex-direction: row;
       font-size: @nav-font-size-mobile;
       display: flex;
       justify-content: space-around;
       align-items: center;
       width: 100%;
+    }
+    @media @mobile{
+      flex-direction: column;
     }
     a {
       .horizontal-margins(2rem);
@@ -52,6 +57,8 @@ header {
       color: @nav-anchors;
       text-decoration: none;
       transition: color @hover-ease-io;
+      word-break: keep-all;
+      white-space: nowrap;
       @media @mobile {
         .horizontal-margins(0.5rem);
         font-size: @nav-font-size-mobile;

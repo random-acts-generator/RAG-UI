@@ -169,18 +169,38 @@ em {
 }
 .blue-seperator {
   position: fixed;
-  background-color: #383841;
+  background-color: #a14156;
   width: 200%;
   height: 60rem;
   top: 48%;
   transform: rotate(-5deg);
   margin-left: -37.5%;
-  z-index: 0;
+  z-index: 1;
   box-shadow: -0.7rem -0.7rem 0.7rem -0.8rem rgba(0, 0, 0, 0.7);
 }
 #copyright {
   font-size: 1.4rem;
   padding: 2.5rem;
+}
+.ellipse {
+  position: fixed;
+  width: 250px;
+  height: 250px;
+  left: 1650px;
+  top: -50px;
+  background-color: rgba(99, 176, 247, 0.1);
+  border-radius: 50%;
+  z-index: 0;
+}
+.ellipse-2 {
+  position: fixed;
+  width: 367px;
+  height: 360px;
+  left: -128px;
+  top: 400px;
+  background-color: rgba(243, 28, 132, 0.1);
+  border-radius: 50%;
+  z-index: 0;
 }
 ::-webkit-scrollbar {
   width: 1.4rem;
@@ -195,6 +215,7 @@ em {
   background: #482736;
 }
 header {
+  margin: 1rem 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -216,13 +237,16 @@ header {
     padding: 0;
   }
 }
-header section {
+header a {
+  text-decoration: none;
+}
+header a section {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 @media (max-width: 1124px) {
-  header section {
+  header a section {
     display: flex;
     flex-direction: column;
     margin: 0rem 0;
@@ -230,38 +254,39 @@ header section {
     align-items: center;
   }
 }
-@media (max-width: 630px) {
-  header section {
-    margin: 1rem 0;
-  }
-}
-header section img {
+header a section img {
   height: 7.5rem;
   animation: beat 1.2s linear infinite;
   transform-origin: center;
 }
-header section h2 {
+header a section h2 {
   margin-left: 1.5rem;
 }
 @media (max-width: 1124px) {
-  header section h2 {
-    margin: 1rem 0;
+  header a section h2 {
+    margin: 0.5rem 0;
   }
 }
 header nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 @media (max-width: 1124px) {
   header nav {
     margin: 1rem 0;
-    flex-direction: column;
+    flex-direction: row;
     font-size: 2rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
+  }
+}
+@media (max-width: 630px) {
+  header nav {
+    flex-direction: column;
   }
 }
 header nav a {
@@ -270,6 +295,8 @@ header nav a {
   color: #EEEEEE;
   text-decoration: none;
   transition: color 0.3s ease-in-out;
+  word-break: keep-all;
+  white-space: nowrap;
 }
 @media (max-width: 630px) {
   header nav a {
@@ -425,8 +452,9 @@ button:hover {
   margin-left: 4rem;
   padding: 1.5rem;
   font-size: 2rem;
-  background-color: #f3e8db;
+  background-color: #eee1d2;
   color: #332a2e;
+  opacity: 0.88;
   border-radius: 0.5rem;
   word-break: keep-all;
 }
@@ -486,6 +514,12 @@ button:hover {
 }
 .middle-content .tab-items {
   margin: 0 2rem;
+  color: #eee1d2;
+}
+.middle-content .tab-items h1 {
+  text-align: center;
+  line-height: 1.6;
+  color: #EEEEEE;
 }
 @media (max-width: 1124px) {
   .middle-content .tab-items {
@@ -499,7 +533,7 @@ button:hover {
   align-items: center;
   background-color: #27151d;
   border-radius: 0.5rem;
-  color: #f3e8db;
+  color: #eee1d2;
   box-shadow: 0.7rem 0.7rem 0.7rem -0.8rem rgba(0, 0, 0, 0.7);
   text-align: center;
   padding: 3rem;
@@ -527,7 +561,7 @@ button:hover {
 .middle-content .item {
   display: flex;
   flex-direction: column;
-  background-color: #332a2e;
+  background-color: #27151d;
   border-radius: 0.5rem;
   box-shadow: 0.7rem 0.7rem 0.7rem -0.8rem rgba(0, 0, 0, 0.7);
   padding: 2rem;
@@ -555,6 +589,7 @@ button:hover {
   font-size: 2rem;
   line-height: 1.25;
   text-align: justify;
+  word-break: keep-all;
 }
 .middle-content .selected {
   display: flex;
@@ -576,11 +611,12 @@ button:hover {
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  border-bottom: 0.4rem solid #27151d;
+  border-bottom: 0.4rem solid #EEEEEE;
   text-align: justify;
 }
 .main-content.about .about-text p {
   line-height: 1.8;
+  word-break: break-word;
 }
 @media (max-width: 1124px) {
   .main-content.about .about-text {
@@ -617,8 +653,8 @@ button:hover {
   height: 30rem;
   width: 30rem;
   padding: 1rem;
-  visibility: hidden;
-  opacity: 0;
+  opacity: 0.6;
+  border-radius: 0.3rem;
   transition: 0.3s ease-in-out;
 }
 @media (max-width: 630px) {
@@ -639,7 +675,7 @@ button:hover {
 }
 .main-content.about .info .github {
   background-color: #6caeeb;
-  border: 0.2rem solid #f3e8db;
+  border: 0.2rem solid #eee1d2;
   background-image: url("../../assets/IMAGES/Team/gh-img.png");
   border-radius: 50%;
   height: 4.5rem;
@@ -647,7 +683,6 @@ button:hover {
   background-size: contain;
 }
 .main-content.about .hover {
-  visibility: unset;
   opacity: 1;
   transition: 0.3s ease-in-out;
 }

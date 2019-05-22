@@ -29,6 +29,12 @@
   }
   .tab-items {
     margin: 0 2rem;
+    color: @cozywhite;
+    h1{
+      text-align: center;
+      line-height: 1.6;
+      color: @nav-anchors;
+    }
     @media @tablet {
       margin: 0;
     }
@@ -61,7 +67,7 @@
   }
   .item {
     .flex-direction(column);
-    background-color: @bg-color;
+    background-color: @accent-color;
     border-radius: @small-border-radius;
     box-shadow: @subtle-shadow-down;
     padding: 2rem;
@@ -84,6 +90,7 @@
       font-size: 2rem;
       line-height: 1.25;
       text-align: justify;
+      word-break: keep-all;
     }
   }
   .selected {
