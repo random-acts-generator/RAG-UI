@@ -62,33 +62,33 @@ const quoteWrap = document.querySelector(".quote");
 let index = -1;
 
 function updateQuote(array) {
-  let fadeIn = setInterval(() => {
-    console.log("Fade In")
-    quoteWrap.style.color = "rgba(0,0,0,1)"
-    quoteWrap.style.transition = "0.8s"
-    clearInterval(fadeIn);
-  },500)
+    setFadeIn();
 
     if (index === array.length - 1) {
       index = -1;
     }
+
     index++;
     quote.textContent = `"${array[index].text}"`;
     author.textContent = array[index].author;
-
-  let fadeOut = setInterval(() => {
-    console.log("Fade out")
-    quoteWrap.style.color = "rgba(0,0,0,0)"
-    quoteWrap.style.transition = "0.8s"
-    clearInterval(fadeOut);
-  },6500)
-  
+    setFadeOut()
 }
 
-setTimeout(() => {
-    console.log("Set timeout")
-    quoteWrap.style.color = "rgba(0,0,0,0)"
-    quoteWrap.style.transition = "0.8s"
-}, 6500)
+function setFadeIn(){
+  let fadeIn = setInterval(() => {
+    quoteWrap.style.color = "#332a2e"
+    quoteWrap.style.transition = "0.6s"
+    clearInterval(fadeIn);
+  },500)
+}
 
+function setFadeOut(){
+  let fadeOut = setInterval(() => {
+    quoteWrap.style.color = "rgba(0,0,0,0)"
+    quoteWrap.style.transition = "0.6s"
+    clearInterval(fadeOut);
+  },6500)
+}
+
+setFadeOut()
 setInterval(() => {updateQuote(quotesArray)  }, 7000);
