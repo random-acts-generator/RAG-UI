@@ -269,12 +269,17 @@ header nav a {
   font-size: 2.4rem;
   color: #EEEEEE;
   text-decoration: none;
+  transition: color 0.3s ease-in-out;
 }
 @media (max-width: 630px) {
   header nav a {
     margin: 0 0.5rem;
     font-size: 2rem;
   }
+}
+header nav a:hover {
+  color: #6caeeb;
+  transition: 0.3s ease-in-out;
 }
 header nav .nav-links {
   display: flex;
@@ -612,7 +617,9 @@ button:hover {
   height: 30rem;
   width: 30rem;
   padding: 1rem;
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
 }
 @media (max-width: 630px) {
   .main-content.about .info {
@@ -623,20 +630,26 @@ button:hover {
 .main-content.about .info p {
   font-size: 2.4rem;
   margin-bottom: 2rem;
+  word-break: normal;
+  color: #c6dff7;
 }
 .main-content.about .info a div {
-  width: 3.2rem;
+  width: 4.5rem;
   position: absolute;
 }
 .main-content.about .info .github {
+  background-color: #6caeeb;
+  border: 0.2rem solid #f3e8db;
   background-image: url("../../assets/IMAGES/Team/gh-img.png");
-  height: 3.2rem;
+  border-radius: 50%;
+  height: 4.5rem;
   background-repeat: no-repeat;
   background-size: contain;
 }
 .main-content.about .hover {
-  display: unset;
-  transition: 2s;
+  visibility: unset;
+  opacity: 1;
+  transition: 0.3s ease-in-out;
 }
 .main-content.about ul {
   display: flex;
