@@ -423,6 +423,7 @@ button:hover {
   font-size: 2rem;
   background-color: #eee1d2;
   color: #332a2e;
+  opacity: 0.88;
   border-radius: 0.5rem;
   word-break: keep-all;
 }
