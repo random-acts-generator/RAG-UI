@@ -59,19 +59,38 @@ const quotesArray = [
 const quote = document.querySelector(".quote i");
 const author = document.querySelector(".author");
 const quoteWrap = document.querySelector(".quote");
-let index = 0;
-
+let firstIteration = true
+let index = -1;
 
 function updateQuote(array) {
-  setInterval(() => {
+  firstIteration = false
+  let fadeIn = setInterval(() => {
+    console.log("Fade In")
+    quoteWrap.style.color = "rgba(0,0,0,1)"
+    quoteWrap.style.transition = "0.8s"
+    clearInterval(fadeIn);
+  },500)
+
     if (index === array.length - 1) {
-      index = 0;
+      index = -1;
     }
-    ++index;
+    index++;
     quote.textContent = `"${array[index].text}"`;
     author.textContent = array[index].author;
-  }, 9000)
+
+  let fadeOut = setInterval(() => {
+    console.log("Fade out")
+    quoteWrap.style.color = "rgba(0,0,0,0)"
+    quoteWrap.style.transition = "0.8s"
+    clearInterval(fadeOut);
+  },6500)
   
 }
 
-updateQuote(quotesArray);
+setTimeout(() => {
+    console.log("Set timeout")
+    quoteWrap.style.color = "rgba(0,0,0,0)"
+    quoteWrap.style.transition = "0.8s"
+}, 6500)
+
+setInterval(() => {updateQuote(quotesArray)  }, 7000);
