@@ -1,94 +1,94 @@
-.main-content.about{
-    .flex-direction(column);
-    .justify-align(center, center);
-    padding: 0;
-    h1{
-        .vertical-margins(2rem);
-    }
-    .about-text{
-        width: 60%;
+.main-content.about {
+  .flex-direction(column);
+  .justify-align(center, center);
+  padding: 0;
+  h1 {
+    .vertical-margins(2rem);
+  }
+  .about-text {
+    width: 60%;
     .flex-direction(column);
     .justify-align(center, center);
     padding: 2rem;
     border-bottom: 0.4rem solid @accent-color;
     text-align: justify;
-    p{
-        line-height: 1.8;
+    p {
+      line-height: 1.8;
     }
-    @media @tablet{
-        width: 90%;
+    @media @tablet {
+      width: 90%;
     }
-    @media @mobile{
-        width: 95%;
-        line-height: 1.4;
+    @media @mobile {
+      width: 95%;
+      line-height: 1.4;
     }
+  }
+  .team {
+    position: relative;
+    width: 62%;
+    flex-wrap: wrap;
+    .flex-direction(row);
+    .justify-align(center, space-around);
+    @media @tablet {
+      width: 90%;
     }
-    .team{
-        position: relative;
-        width: 62%;
-        flex-wrap: wrap;
-        .flex-direction(row);
-        .justify-align(center, space-around);
-        @media @tablet{
-            width: 90%;
-        }
+  }
+  .team-member {
+    position: relative;
+    .vertical-margins(1rem);
+  }
+  .info {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 30rem;
+    width: 30rem;
+    padding: 1rem;
+    visibility: hidden;
+    opacity: 0;
+    transition: @hover-ease-io;
+    @media @mobile {
+      height: 20rem;
+      width: 20rem;
     }
-    .team-member{
-        position: relative;
-        .vertical-margins(1rem);
+    p {
+      font-size: 2.4rem;
+      margin-bottom: 2rem;
+      word-break: normal;
+      color: @lightskyblue;
     }
-    .info{
+    a {
+      div {
+        width: @github-img;
         position: absolute;
-        background-color: rgba(0,0,0,0.5);
-        height: 30rem;
-        width: 30rem;
-        padding: 1rem;
-        visibility: hidden;
-        opacity: 0;
-        transition: @hover-ease-io;
-        @media @mobile{
-            height:20rem;
-            width: 20rem;
-        }
-        p{
-            font-size: 2.4rem;
-            margin-bottom: 2rem;
-            word-break: normal;
-            color: @lightskyblue;
-        }
-        a{
-            div{
-                width: @github-img;
-                position: absolute;
-            }
-        }
-        .github{
-            background-color: @skyblue;
-            border: 0.2rem solid @cozywhite;
-            background-image: url("../../assets/IMAGES/Team/gh-img.png");
-            border-radius: 50%;
-            height: @github-img;
-            background-repeat: no-repeat;
-            background-size: contain;
-        }
+      }
     }
-    .hover{
-            visibility: unset;
-            opacity: 1;
-            transition: @hover-ease-io;
+    .github {
+      background-color: @skyblue;
+      border: 0.2rem solid @cozywhite;
+      background-image: url("../../assets/IMAGES/Team/gh-img.png");
+      border-radius: 50%;
+      height: @github-img;
+      background-repeat: no-repeat;
+      background-size: contain;
     }
-    ul{
-        .flex-direction(row);
-        .justify-align(space-around, space-around);
-        flex-wrap: wrap;
-        align-content: space-around;
+  }
+  .hover {
+    visibility: unset;
+    opacity: 1;
+    transition: @hover-ease-io;
+  }
+  ul {
+    .flex-direction(row);
+    .justify-align(space-around, space-around);
+    flex-wrap: wrap;
+    align-content: space-around;
+  }
+  img {
+    height: 30rem;
+    box-shadow: @normal-shadow;
+    border-radius: 0.3rem;
+    @media @mobile {
+      height: 20rem;
     }
-    img{
-        height: 30rem;
-        box-shadow: @normal-shadow;
-        border-radius: 0.3rem;
-        @media @mobile{
-            height: 20rem;
-        }
-    }
+  }
 }
