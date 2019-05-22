@@ -136,7 +136,7 @@ html,
 body {
   font-size: 62.5%;
   background-color: #332a2e;
-  font-family: 'Ruda', sans-serif;
+  font-family: "Ruda", sans-serif;
   color: white;
 }
 p {
@@ -442,6 +442,14 @@ button:hover {
     margin: 0 2rem;
     width: unset;
   }
+}
+.quote .fade-in {
+  color: #332a2e;
+  transition: 1s;
+}
+.quote .fade-out {
+  color: red;
+  transition: 1s;
 }
 .middle-content {
   padding-top: 2.5rem;
