@@ -1,4 +1,5 @@
 header {
+  .vertical-margins(1rem);
   .flex-direction(row);
   .justify-align(space-between, center);
   padding: 3rem;
@@ -18,9 +19,6 @@ header {
       .vertical-margins(0rem);
       .justify-align(space-around, center);
     }
-    @media @mobile {
-      .vertical-margins(1rem);
-    }
     img {
       height: 7.5rem;
       animation: beat 1.2s linear infinite;
@@ -29,7 +27,7 @@ header {
     h2 {
       margin-left: 1.5rem;
       @media @tablet {
-        .vertical-margins(1rem);
+        .vertical-margins(0.5rem);
       }
     }
   }
