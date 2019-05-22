@@ -41,12 +41,15 @@ header {
     z-index: 1;
     @media @tablet {
       .vertical-margins(1rem);
-      flex-direction: column;
+      flex-direction: row;
       font-size: @nav-font-size-mobile;
       display: flex;
       justify-content: space-around;
       align-items: center;
       width: 100%;
+    }
+    @media @mobile{
+      flex-direction: column;
     }
     a {
       .horizontal-margins(2rem);
@@ -54,6 +57,8 @@ header {
       color: @nav-anchors;
       text-decoration: none;
       transition: color @hover-ease-io;
+      word-break: keep-all;
+      white-space: nowrap;
       @media @mobile {
         .horizontal-margins(0.5rem);
         font-size: @nav-font-size-mobile;
