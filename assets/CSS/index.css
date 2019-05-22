@@ -169,7 +169,7 @@ em {
 }
 .blue-seperator {
   position: fixed;
-  background-color: #383841;
+  background-color: #a14156;
   width: 200%;
   height: 60rem;
   top: 48%;
@@ -421,7 +421,7 @@ button:hover {
   margin-left: 4rem;
   padding: 1.5rem;
   font-size: 2rem;
-  background-color: #f3e8db;
+  background-color: #eee1d2;
   color: #332a2e;
   border-radius: 0.5rem;
   word-break: keep-all;
@@ -482,6 +482,12 @@ button:hover {
 }
 .middle-content .tab-items {
   margin: 0 2rem;
+  color: #eee1d2;
+}
+.middle-content .tab-items h1 {
+  text-align: center;
+  line-height: 1.6;
+  color: #EEEEEE;
 }
 @media (max-width: 1124px) {
   .middle-content .tab-items {
@@ -495,7 +501,7 @@ button:hover {
   align-items: center;
   background-color: #27151d;
   border-radius: 0.5rem;
-  color: #f3e8db;
+  color: #eee1d2;
   box-shadow: 0.7rem 0.7rem 0.7rem -0.8rem rgba(0, 0, 0, 0.7);
   text-align: center;
   padding: 3rem;
@@ -523,7 +529,7 @@ button:hover {
 .middle-content .item {
   display: flex;
   flex-direction: column;
-  background-color: #332a2e;
+  background-color: #27151d;
   border-radius: 0.5rem;
   box-shadow: 0.7rem 0.7rem 0.7rem -0.8rem rgba(0, 0, 0, 0.7);
   padding: 2rem;
@@ -551,6 +557,7 @@ button:hover {
   font-size: 2rem;
   line-height: 1.25;
   text-align: justify;
+  word-break: keep-all;
 }
 .middle-content .selected {
   display: flex;
@@ -613,8 +620,7 @@ button:hover {
   height: 30rem;
   width: 30rem;
   padding: 1rem;
-  visibility: hidden;
-  opacity: 0;
+  opacity: 0.6;
   transition: 0.3s ease-in-out;
 }
 @media (max-width: 630px) {
@@ -635,7 +641,7 @@ button:hover {
 }
 .main-content.about .info .github {
   background-color: #6caeeb;
-  border: 0.2rem solid #f3e8db;
+  border: 0.2rem solid #eee1d2;
   background-image: url("../../assets/IMAGES/Team/gh-img.png");
   border-radius: 50%;
   height: 4.5rem;
@@ -643,7 +649,6 @@ button:hover {
   background-size: contain;
 }
 .main-content.about .hover {
-  visibility: unset;
   opacity: 1;
   transition: 0.3s ease-in-out;
 }
