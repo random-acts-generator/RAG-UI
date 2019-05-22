@@ -69,8 +69,10 @@ function updateQuote(array) {
     }
 
     index++;
+
     quote.textContent = `"${array[index].text}"`;
     author.textContent = array[index].author;
+    
     setFadeOut()
 }
 
