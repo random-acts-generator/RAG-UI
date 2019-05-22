@@ -195,6 +195,7 @@ em {
   background: #482736;
 }
 header {
+  margin: 1rem 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -230,11 +231,6 @@ header section {
     align-items: center;
   }
 }
-@media (max-width: 630px) {
-  header section {
-    margin: 1rem 0;
-  }
-}
 header section img {
   height: 7.5rem;
   animation: beat 1.2s linear infinite;
@@ -245,7 +241,7 @@ header section h2 {
 }
 @media (max-width: 1124px) {
   header section h2 {
-    margin: 1rem 0;
+    margin: 0.5rem 0;
   }
 }
 header nav {
