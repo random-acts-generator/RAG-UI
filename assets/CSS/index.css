@@ -443,14 +443,6 @@ button:hover {
     width: unset;
   }
 }
-.quote .fade-in {
-  color: #332a2e;
-  transition: 1s;
-}
-.quote .fade-out {
-  color: red;
-  transition: 1s;
-}
 .middle-content {
   padding-top: 2.5rem;
   display: flex;
