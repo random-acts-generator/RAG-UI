@@ -22,3 +22,8 @@ window.addEventListener("resize", () => {
     ? lastLink.textContent = "Kind-ness" 
     : lastLink.textContent = "Kindness"
   })
+  window.addEventListener("load", () => {
+    content.matches === true 
+      ? lastLink.textContent = "Kind-ness" 
+      : lastLink.textContent = "Kindness"
+    })
