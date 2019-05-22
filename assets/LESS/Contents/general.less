@@ -1,4 +1,3 @@
-
 html,
 body {
   font-size: 62.5%;
@@ -9,18 +8,19 @@ body {
 p {
   font-size: @paragraph-font-size;
   line-height: @lineHeight-paragraph;
+  word-break: break-all;
 }
 h1 {
   font-size: @headline-font-size;
-  @media @mobile{
+  @media @mobile {
     font-size: @mobile-headline-font-size;
   }
 }
-h2{
+h2 {
   font-size: @heading2-font-size;
   color: @nav-heading;
 }
-h3{
+h3 {
   font-size: @heading3-font-size;
   text-align: center;
   line-height: 1.8;
@@ -42,7 +42,7 @@ em {
   z-index: 0;
   box-shadow: @subtle-shadow-up;
 }
-#copyright{
+#copyright {
   font-size: @small-paragraph-font-size;
   padding: @small-top-padding;
 }
@@ -56,7 +56,7 @@ em {
 ::-webkit-scrollbar-track {
   background: darken(@accent-color, 10);
 }
- 
+
 ::-webkit-scrollbar-thumb {
   background: @accent-color;
 }
