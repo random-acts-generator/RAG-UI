@@ -59,11 +59,9 @@ const quotesArray = [
 const quote = document.querySelector(".quote i");
 const author = document.querySelector(".author");
 const quoteWrap = document.querySelector(".quote");
-let firstIteration = true
 let index = -1;
 
 function updateQuote(array) {
-  firstIteration = false
   let fadeIn = setInterval(() => {
     console.log("Fade In")
     quoteWrap.style.color = "rgba(0,0,0,1)"
