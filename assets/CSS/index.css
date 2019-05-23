@@ -718,7 +718,7 @@ button:hover {
   display: flex;
   flex-direction: column;
 }
-.bottom-content .generator .wrap {
+.bottom-content .generator .display {
   height: 10rem;
   justify-content: space-around;
   align-items: center;
