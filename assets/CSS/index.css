@@ -309,7 +309,7 @@ header nav a {
 }
 header nav a:hover {
   color: #6caeeb;
-  transition: 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 header nav .nav-links {
   display: flex;
@@ -323,6 +323,9 @@ header nav .nav-links {
   header nav .nav-links {
     width: 100%;
   }
+}
+header nav .nav-links a.active-link {
+  border-bottom: 0.3rem solid #B41561;
 }
 @keyframes beat {
   0% {
