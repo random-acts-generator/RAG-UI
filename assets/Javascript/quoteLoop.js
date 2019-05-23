@@ -89,8 +89,8 @@ function setFadeOut(){
     quoteWrap.style.color = "rgba(0,0,0,0)"
     quoteWrap.style.transition = "0.6s"
     clearInterval(fadeOut);
-  },6500)
+  },7500)
 }
 
 setFadeOut()
-setInterval(() => {updateQuote(quotesArray)  }, 7000);
+setInterval(() => {updateQuote(quotesArray)  }, 8000);
