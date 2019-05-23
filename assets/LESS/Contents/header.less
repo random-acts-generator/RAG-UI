@@ -22,7 +22,7 @@ header {
         .justify-align(space-around, center);
       }
       img {
-        height: 7.5rem;
+        height: 6.5rem;
         animation: beat 1.2s linear infinite;
         transform-origin: center;
       }
@@ -65,7 +65,7 @@ header {
       }
       &:hover {
         color: @nav-hover;
-        transition: @hover-ease-io;
+        transition: color @hover-ease-io;
       }
     }
     .nav-links {
@@ -74,16 +74,11 @@ header {
       padding: 0 2rem;
       .vertical-margins(2rem);
       .tablet-expand();
-    }
-    .nav-buttons {
-      .flex-direction(row);
-      .justify-align(center, center);
-      .tablet-expand();
+      a.active-link {
+        border-bottom: 0.3rem solid @drypink;
+      }
     }
   }
-}
-button {
-  .btn-mixin();
 }
 
 @keyframes beat {
