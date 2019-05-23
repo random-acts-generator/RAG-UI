@@ -1,0 +1,45 @@
+.bottom-content {
+  padding-top: 2rem;
+  width: 100%;
+  .flex-direction(row);
+  .justify-align(center, center);
+  .vertical-margins(1rem);
+
+  .generator {
+    .vertical-margins(1rem);
+    .flex-direction(column);
+
+    .wrap {
+      height: 10rem;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .be-kind {
+      width: 25%;
+      &:focus {
+        outline: 0;
+      }
+    }
+    .output {
+      .flex-direction(row);
+      .justify-align(center, center);
+      box-shadow: @subtle-shadow-down;
+      width: 80%;
+      height: 4rem;
+      border-radius: 0.5rem;
+      border: none;
+      background-color: @accent-color;
+      color: white;
+      font-weight: bold;
+      font-size: @paragraph-font-size;
+      padding: 1rem;
+      text-align: center;
+      &::placeholder {
+        color: white;
+      }
+      &:focus {
+        outline: 0;
+      }
+    }
+  }
+}
