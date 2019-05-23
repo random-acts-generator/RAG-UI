@@ -383,7 +383,6 @@ header nav .nav-links a.active-link {
   .top-content {
     display: flex;
     flex-direction: column;
-    width: 100%;
   }
 }
 .super-ty {
@@ -408,6 +407,11 @@ header nav .nav-links a.active-link {
     width: 100%;
     margin-left: 1.5rem;
     text-align: center;
+  }
+}
+@media (max-width: 630px) {
+  .slogan {
+    margin: 0;
   }
 }
 .slogan h1 {
@@ -512,7 +516,7 @@ header nav .nav-links a.active-link {
   justify-content: center;
   align-items: center;
   background-color: #27151d;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   color: #eee1d2;
   box-shadow: 0.7rem 0.7rem 0.7rem -0.8rem rgba(0, 0, 0, 0.7);
   text-align: center;
