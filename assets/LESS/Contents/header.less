@@ -65,7 +65,7 @@ header {
       }
       &:hover {
         color: @nav-hover;
-        transition: @hover-ease-io;
+        transition: color @hover-ease-io;
       }
     }
     .nav-links {
@@ -74,6 +74,9 @@ header {
       padding: 0 2rem;
       .vertical-margins(2rem);
       .tablet-expand();
+      a.active-link {
+        border-bottom: 0.3rem solid @drypink;
+      }
     }
   }
 }
